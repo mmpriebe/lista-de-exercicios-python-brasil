@@ -21,3 +21,12 @@ Arredonde o tempo em minutos
 
 def calcular_tempo_de_download():
     """Escreva aqui em baixo a sua solução"""
+    tamanho_arquivo = int(input('Informe o tamanho do arquivo: '))
+    velocidade_internet = int(input('Informe a velocidade da internet: '))
+    tempo_de_download = round(((tamanho_arquivo * 8) / velocidade_internet) / 60)
+
+
+    print(f'O tempo aproximado do Download é: {tempo_de_download} minuto(s)')
+
+if __name__ == '__main__':
+    calcular_tempo_de_download()
